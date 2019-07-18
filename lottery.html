@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .lottery {
+        width: 800px;
+        margin: 0 auto;
+        height: 500px;
+        background-color: #5fafea;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .lottery .lottery-block {
+        width: 25%;
+        height: 25%;
+        background-color: rgba(255, 0, 0, 0.38);
+        border: 1px solid silver;
+        box-sizing: border-box;
+    }
+    .lottery .lottery-block.active {
+        background-color: red;
+    }
+    .lottery .center-btn {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color: rgba(255, 255, 0, 0.58);
+        top: 25%;
+        left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lottery .center-btn button {
+        padding: 20px 50px;
+    }
+</style>
+<body>
+<div class="lottery">
+    <div class="lottery-block lottery-block1"></div>
+    <div class="lottery-block lottery-block2"></div>
+    <div class="lottery-block lottery-block3"></div>
+    <div class="lottery-block lottery-block4"></div>
+    <div class="lottery-block lottery-block12"></div>
+    <div class="lottery-block"></div>
+    <div class="lottery-block"></div>
+    <div class="lottery-block lottery-block5"></div>
+    <div class="lottery-block lottery-block11"></div>
+    <div class="lottery-block"></div>
+    <div class="lottery-block"></div>
+    <div class="lottery-block lottery-block6"></div>
+    <div class="lottery-block lottery-block10"></div>
+    <div class="lottery-block lottery-block9"></div>
+    <div class="lottery-block lottery-block8"></div>
+    <div class="lottery-block lottery-block7"></div>
+    <div class="center-btn">
+        <button class="btn">抽奖</button>
+    </div>
+</div>
+<script type="application/javascript" src="jquery.js"></script>
+<script type="application/javascript" src="lottery.js"></script>
+</body>
+</html>
